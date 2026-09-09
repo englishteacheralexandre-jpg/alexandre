@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-833043445"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-833043445');
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alexandre Cruz</title>
@@ -219,5 +227,16 @@
 
     <a class="floating-whatsapp" href="https://wa.me/5511959596380?text=Ol%C3%A1%2C%20vim%20pelo%20site" target="_blank" rel="noreferrer">WhatsApp</a>
     <footer>Site conceitual de Alexandre Cruz · Psicologia, educação, teatro e escrita.</footer>
+    <!-- Google Ads conversion: WhatsApp link clicks -->
+    <script>
+      document.addEventListener('click', function (event) {
+        const whatsappLink = event.target.closest?.('a[href^="https://wa.me/"]');
+        if (!whatsappLink || typeof gtag !== 'function') return;
+
+        gtag('event', 'conversion', {
+          'send_to': 'AW-833043445/MLD9CIy_qOccEPX3nI0D'
+        });
+      });
+    </script>
   </body>
 </html>
